@@ -95,13 +95,13 @@ class _HomeState extends State<Home> {
                           controller: textEditingController,
                           style: TextStyle(
                               fontSize: 16,
-                              color: Colors.white,
+                              color: Colors.black,
                               fontFamily: 'MontserratRegular'),
                           decoration: InputDecoration(
                             hintText: "Ketik disini ya!",
                             hintStyle: TextStyle(
                                 fontSize: 16,
-                                color: Colors.white.withOpacity(0.5),
+                                color: Colors.black.withOpacity(0.5),
                                 fontFamily: 'MontserratRegular'),
                             enabledBorder: UnderlineInputBorder(
                               borderSide: BorderSide(color: Colors.white),
@@ -124,10 +124,11 @@ class _HomeState extends State<Home> {
                               // ignore: deprecated_member_use
                               recipies = new List();
 
-                              String url =
-                                  "https://api.edamam.com/search?q=${textEditingController.text}&app_id=c3536992&app_key=355a16e5464d07d7ad267aa15966840e";
+                              //String url =
+                              //  "https://api.edamam.com/search?q=${textEditingController.text}&app_id=c3536992&app_key=355a16e5464d07d7ad267aa15966840e";
 
-                              var response = await http.get(url);
+                              var response = await http.get(Uri.parse(
+                                  'https://api.edamam.com/search?q=${textEditingController.text}&app_id=c3536992&app_key=355a16e5464d07d7ad267aa15966840e'));
                               print(" $response this is response");
 
                               Map<String, dynamic> jsonData =

@@ -61,6 +61,13 @@ class _RecipeViewState extends State<RecipeView> {
                         color: Colors.white,
                         fontFamily: 'LeagueSpartan'),
                   ),
+                  Text(
+                    "Resep Makanan Rumah",
+                    style: TextStyle(
+                        fontSize: 18,
+                        color: Colors.white,
+                        fontFamily: 'MontserratRegular'),
+                  )
                 ],
               ),
             ),
