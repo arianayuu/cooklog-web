@@ -59,14 +59,14 @@ class _RecipeViewState extends State<RecipeView> {
                     style: TextStyle(
                         fontSize: 18,
                         color: Colors.white,
-                        fontFamily: 'LeagueSpartan'),
+                        fontFamily: 'Overpass'),
                   ),
                   Text(
                     "Resep Makanan Rumah",
                     style: TextStyle(
                         fontSize: 18,
-                        color: Colors.white,
-                        fontFamily: 'MontserratRegular'),
+                        color: Colors.blue,
+                        fontFamily: 'Overpass'),
                   )
                 ],
               ),

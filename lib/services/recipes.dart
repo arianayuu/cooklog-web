@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:cooklog_web/models/hits.dart';
+import 'package:http/http.dart' as http;
 
 class Recipe {
   List<Hits> hits = [];

@@ -36,7 +36,7 @@ class _HomeState extends State<Home> {
             width: MediaQuery.of(context).size.width,
             decoration: BoxDecoration(
                 gradient: LinearGradient(
-                    colors: [const Color(0xFFD8E3E7), const Color(0xFFF8F5F1)],
+                    colors: [const Color(0xff213A50), const Color(0xff071930)],
                     begin: FractionalOffset.topRight,
                     end: FractionalOffset.bottomLeft)),
           ),
@@ -58,11 +58,18 @@ class _HomeState extends State<Home> {
                         : MainAxisAlignment.center,
                     children: <Widget>[
                       Text(
-                        "cooklog",
+                        "cook",
                         style: TextStyle(
                             fontSize: 18,
-                            color: Colors.amber,
-                            fontFamily: 'LeagueSpartanBold'),
+                            color: Colors.white,
+                            fontFamily: 'Overpass'),
+                      ),
+                      Text(
+                        "LOG",
+                        style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.blue,
+                            fontFamily: 'Overpass'),
                       ),
                     ],
                   ),
@@ -73,17 +80,17 @@ class _HomeState extends State<Home> {
                     "Mau masak apa hari ini?",
                     style: TextStyle(
                         fontSize: 20,
-                        color: Colors.black,
+                        color: Colors.white,
                         fontWeight: FontWeight.w400,
-                        fontFamily: 'MontserratRegular'),
+                        fontFamily: 'Overpass'),
                   ),
                   Text(
                     "Ketik bahan masakan yang ingin diolah, kami akan bantu cari resepnya!",
                     style: TextStyle(
                         fontSize: 15,
-                        color: Colors.black,
+                        color: Colors.white,
                         fontWeight: FontWeight.w300,
-                        fontFamily: 'MontserratRegular'),
+                        fontFamily: 'OverpassRegular'),
                   ),
                   SizedBox(
                     height: 40,
@@ -95,14 +102,14 @@ class _HomeState extends State<Home> {
                           controller: textEditingController,
                           style: TextStyle(
                               fontSize: 16,
-                              color: Colors.black,
-                              fontFamily: 'MontserratRegular'),
+                              color: Colors.white,
+                              fontFamily: 'Overpass'),
                           decoration: InputDecoration(
                             hintText: "Ketik disini ya!",
                             hintStyle: TextStyle(
                                 fontSize: 16,
-                                color: Colors.black.withOpacity(0.5),
-                                fontFamily: 'MontserratRegular'),
+                                color: Colors.white.withOpacity(0.5),
+                                fontFamily: 'Overpass'),
                             enabledBorder: UnderlineInputBorder(
                               borderSide: BorderSide(color: Colors.white),
                             ),
@@ -268,14 +275,14 @@ class _RecipeTileState extends State<RecipeTile> {
                           style: TextStyle(
                               fontSize: 13,
                               color: Colors.black54,
-                              fontFamily: 'MontserratRegular'),
+                              fontFamily: 'Overpass'),
                         ),
                         Text(
                           widget.desc,
                           style: TextStyle(
                               fontSize: 10,
                               color: Colors.black54,
-                              fontFamily: 'MontserratRegular'),
+                              fontFamily: 'OverpassRegular'),
                         )
                       ],
                     ),
