@@ -1,6 +1,13 @@
 name: cooklog_web
 description: A new Flutter project.
 
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/icon.png"
+  adaptive_icon_background: "#fffff"
+  adaptive_icon_foreground: "assets/images/icon.png"
+  
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
 # followed by an optional build number separated by a +.
@@ -19,18 +26,22 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  footer: ^0.0.3
   http: ^0.13.3
   webview_flutter: ^2.0.6
   url_launcher: ^6.0.3
-
+  animations: ^2.0.1
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+ 
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: "^0.8.0"
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -44,8 +55,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/images/logo.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -60,12 +71,12 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-     - family: Overpass
-       fonts:
-         - asset: assets/fonts/overpass_bold.otf
-     - family: OverpassRegular
-       fonts:
-         - asset: assets/fonts/overpass_regular.otf
+    - family: Overpass
+      fonts:
+       - asset: assets/fonts/overpass_bold.otf
+    - family: OverpassRegular
+      fonts:
+        - asset: assets/fonts/overpass_regular.otf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #

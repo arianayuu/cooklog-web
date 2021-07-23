@@ -45,8 +45,8 @@ class _RecipeViewState extends State<RecipeView> {
               decoration: BoxDecoration(
                   gradient: LinearGradient(
                       colors: [
-                    const Color(0xff213A50),
-                    const Color(0xff071930)
+                    const Color(0xff071930),
+                    const Color(0xff213A50)
                   ],
                       begin: FractionalOffset.topRight,
                       end: FractionalOffset.bottomLeft)),
