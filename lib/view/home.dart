@@ -57,39 +57,48 @@ class _HomeState extends State<Home> {
                         ? MainAxisAlignment.start
                         : MainAxisAlignment.center,
                     children: <Widget>[
-                      Text(
-                        "cook",
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.white,
-                            fontFamily: 'Overpass'),
-                      ),
-                      Text(
-                        "LOG",
-                        style: TextStyle(
-                            fontSize: 18,
-                            color: Colors.blue,
-                            fontFamily: 'Overpass'),
-                      ),
+                      Image.asset('assets/images/logo.png',
+                          height: 50, width: 80),
+                      // Text(
+                      //   "cook",
+                      //   style: TextStyle(
+                      //       fontSize: 18,
+                      //       color: Colors.white,
+                      //       fontFamily: 'Overpass'),
+                      // ),
+                      // Text(
+                      //   "LOG",
+                      //   style: TextStyle(
+                      //       fontSize: 18,
+                      //       color: Colors.blue,
+                      //       fontFamily: 'Overpass'),
+                      // ),
                     ],
                   ),
-                  SizedBox(
-                    height: 60,
+                  SizedBox(height: 60),
+                  Text(
+                    "Halo, Chef!",
+                    style: TextStyle(
+                        fontSize: 60,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Overpass'),
                   ),
+                  SizedBox(height: 20),
                   Text(
                     "Mau masak apa hari ini?",
                     style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 30,
                         color: Colors.white,
-                        fontWeight: FontWeight.w400,
+                        fontWeight: FontWeight.normal,
                         fontFamily: 'Overpass'),
                   ),
                   Text(
                     "Ketik bahan masakan yang ingin diolah, kami akan bantu cari resepnya!",
                     style: TextStyle(
-                        fontSize: 15,
+                        fontSize: 20,
                         color: Colors.white,
-                        fontWeight: FontWeight.w300,
+                        fontWeight: FontWeight.normal,
                         fontFamily: 'OverpassRegular'),
                   ),
                   SizedBox(
@@ -135,8 +144,8 @@ class _HomeState extends State<Home> {
                               //  "https://api.edamam.com/search?q=${textEditingController.text}&app_id=c3536992&app_key=355a16e5464d07d7ad267aa15966840e";
 
                               var response = await http.get(Uri.parse(
-                                  'https://api.edamam.com/search?q=${textEditingController.text}&app_id=c3536992&app_key=355a16e5464d07d7ad267aa15966840e'));
-                              print(" $response this is response");
+                                  'https://api.edamam.com/search?q=${textEditingController.text}&app_id=c3536992&app_key=019a1cd5fd46f81f3e058d5f1071c809'));
+                              print("$response this is response");
 
                               Map<String, dynamic> jsonData =
                                   jsonDecode(response.body);
@@ -165,8 +174,8 @@ class _HomeState extends State<Home> {
                                 borderRadius: BorderRadius.circular(8),
                                 gradient: LinearGradient(
                                     colors: [
-                                      const Color(0xffA2834D),
-                                      const Color(0xffBC9A5F)
+                                      const Color(0xFFF3AB5F),
+                                      const Color(0xFFF3AB5F)
                                     ],
                                     begin: FractionalOffset.topRight,
                                     end: FractionalOffset.bottomLeft)),
@@ -204,7 +213,7 @@ class _HomeState extends State<Home> {
                 ],
               ),
             ),
-          )
+          ),
         ],
       ),
     );
